@@ -1,5 +1,5 @@
 import Nav from "./Components/Nav";
-import MainSection from "./Components/mainSection";
+import MainSection from "./Components/MainSection";
 import Footer from "./Components/Footer";
 
 const App = () => {
