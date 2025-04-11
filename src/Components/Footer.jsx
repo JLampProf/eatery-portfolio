@@ -7,6 +7,8 @@ import {
   FaYelp,
 } from "react-icons/fa6";
 
+//The footer component for the site
+
 const Footer = () => {
   return (
     <div className="footer">
