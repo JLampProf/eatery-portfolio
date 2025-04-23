@@ -3,7 +3,7 @@ import { Landing, MainSection, Menu, DownloadApp } from "./pages";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/eatery-portfolio/",
     element: <Landing />,
     children: [
       {
@@ -11,11 +11,11 @@ const router = createBrowserRouter([
         element: <MainSection />,
       },
       {
-        path: "/menu",
+        path: "/eatery-portfolio/menu",
         element: <Menu />,
       },
       {
-        path: "/app",
+        path: "/eatery-portfolio/app",
         element: <DownloadApp />,
       },
     ],
