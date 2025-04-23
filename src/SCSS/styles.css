@@ -45,7 +45,7 @@ body {
 }
 
 .bg-blur {
-  background-image: url("./eatery-portfolio/dining_area.jpg");
+  background-image: url("./public/dining_area.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
