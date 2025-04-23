@@ -1,16 +1,16 @@
 import { BsDot } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <div className="nav">
       <ul className="nav-list">
-        <li className="nav-list-item">Home</li>
+        <Link to="/">Home</Link>
         <BsDot />
-        <li className="nav-list-item">Menu</li>
+        <Link to="/menu">Menu</Link>
         <BsDot />
-        <li className="nav-list-item">Download App</li>
+        <Link to="app">Download App</Link>
       </ul>
-      <h3 className="nav-header">(Not a real landing page)</h3>
     </div>
   );
 };

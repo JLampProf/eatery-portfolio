@@ -20,13 +20,7 @@ const Images = ({ image, isHovered, reset }) => {
 
   return (
     <div className="image-container">
-      <img
-        className={`image ${isHovered ? "visible" : ""} ${
-          reset === "reset" ? "reset" : ""
-        }`}
-        src={images[image]?.src}
-        alt={images[image]?.alt}
-      />
+      <img />
     </div>
   );
 };

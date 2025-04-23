@@ -1,6 +1,7 @@
 body {
   color: #fff5cd;
   margin: 0;
+  overflow: hidden;
   font-family: "Playwrite GB S", cursive;
 }
 
@@ -45,31 +46,34 @@ body {
 // Background-image-End
 
 // Main-Section-Start
-.main-section {
-  background-color: #000000;
+.section {
+  // background-color: #000000;
   display: flex;
   padding: 20px;
   overflow: hidden;
-  z-index: 2;
-
-  &-list {
-    list-style: none;
-    z-index: 3;
-    position: absolute;
-    left: 50px;
-    top: 70px;
-
-    &-item {
-      border: 2px solid #1e3e62;
-      border-radius: 6px;
-      padding: 10px;
-      margin: 20px 5px;
-      width: 200px;
-      z-index: 4;
-    }
-  }
 }
 // Main-Section-End
+
+//Blur background-image-Start
+.bg-blur {
+  background-image: url("./dining_area.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  // height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // overflow: hidden
+  pointer-events: none;
+  position: absolute;
+  transform: scale(1.1);
+  // width: 100%;
+  z-index: -1;
+}
+//Blur background-image-End
 
 // Image-Component-Start
 .images-component {
@@ -105,190 +109,6 @@ body {
   transition: none;
 }
 // Image-Component-End
-
-// Animated-Lines-Start
-.lines {
-  position: absolute;
-  top: 232px;
-  left: 350px;
-  z-index: 6;
-  pointer-events: none;
-
-  // first-line-Start
-  &-first-0 {
-    height: 105px;
-    width: 5px;
-    background-color: white;
-    position: absolute;
-    top: -105px;
-    animation-name: first-line-0;
-    animation-duration: 500ms;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-  }
-
-  &-first-1 {
-    height: 35px;
-    width: 5px;
-    background-color: white;
-    position: absolute;
-    top: -31px;
-    animation-name: first-line-1;
-    animation-duration: 500ms;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-  }
-
-  &-first-2 {
-    height: 35px;
-    width: 5px;
-    background-color: white;
-    position: absolute;
-    top: 31px;
-    animation-name: first-line-2;
-    animation-duration: 500ms;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-  }
-
-  &-first-3 {
-    height: 35px;
-    width: 5px;
-    background-color: white;
-    position: absolute;
-    top: 105px;
-    animation-name: first-line-3;
-    animation-duration: 500ms;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-  }
-  // first-line-End
-
-  &-right {
-    height: 5px;
-    width: 0px;
-    position: relative;
-    top: 0;
-    background-color: white;
-    animation-name: line-right;
-    animation-duration: 500ms;
-    animation-delay: 500ms;
-    animation-fill-mode: forwards;
-  }
-
-  &-down {
-    width: 5px;
-    height: 0px;
-    background-color: white;
-    animation-name: line-down;
-    animation-duration: 500ms;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    position: relative;
-    left: 195px;
-  }
-
-  &-right-bottom {
-    width: 0px;
-    height: 5px;
-    background-color: white;
-    animation-name: line-right-bottom;
-    animation-duration: 500ms;
-    animation-delay: 1500ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    position: relative;
-    top: -5px;
-    left: 200px;
-  }
-}
-// Keyframes-Start
-
-// First Line Keyframes-Start
-
-@keyframes first-line-0 {
-  0% {
-    height: 0px;
-  }
-
-  100% {
-    height: 105px;
-  }
-}
-
-@keyframes first-line-1 {
-  0% {
-    height: 0px;
-  }
-
-  100% {
-    height: 35px;
-  }
-}
-
-@keyframes first-line-2 {
-  0% {
-    height: 0px;
-    top: 30px;
-  }
-
-  100% {
-    height: 30px;
-    top: 0px;
-  }
-}
-
-@keyframes first-line-3 {
-  0% {
-    height: 0px;
-    top: 105px;
-  }
-
-  100% {
-    height: 105px;
-    top: 0px;
-  }
-}
-
-// First Line Keyframes-End
-
-// Top Line Keyframes-Start
-@keyframes line-right {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 200px;
-  }
-}
-// Top Line Keyframes-End
-
-// Vertical Line Keyframes-Starts
-@keyframes line-down {
-  0% {
-    height: 0px;
-  }
-
-  100% {
-    height: 200px;
-  }
-}
-// Vertical Line Keyframes-End
-
-// Bottom Line Keyframes-Start
-@keyframes line-right-bottom {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 250px;
-  }
-}
-// Bottom Line Keyframes-End
-// Keyframes-End
-// Animated-Lines-End
 
 // Footer-Start
 .footer {
